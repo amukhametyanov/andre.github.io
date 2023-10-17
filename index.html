@@ -252,7 +252,7 @@
 
 
 
-<body>
+<body style="position: relative;">
 
   <div class="site-mobile-menu">
     <div class="site-mobile-menu-header">
@@ -264,7 +264,8 @@
   </div>
 
   <!-- Navigation menu -->
-  <nav class="site-nav mb-5">
+  <nav class="mb-5 sticky-top" style="position:relative;">
+  <!-- <nav class="site-nav mb-5"> -->
     <div class="sticky-nav js-sticky-header">
       <div class="container position-relative">
         <div class="site-navigation text-center align-items-center">
@@ -705,6 +706,16 @@
       });
     });
   </script>
+
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var nav = document.querySelector(".site-nav");
+    if (nav) {
+        nav.classList.add("sticky-top");
+    }
+});
+
+  </script> -->
 
 </body>
 
