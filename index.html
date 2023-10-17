@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Display+Playfair:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>For Sale - 1 Kemp Square, Toronto, Ontario</title>
+</head>
+<style>
+  .h1-hero {
+    font-size: 16px !important;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 300;
+  }
+
+  .h2-hero {
+    font-size: 50px;
+    color: #fff !important;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 42px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+  }
+
+  h2 {
+    border: 1px solid white;
+    padding: 5px 15px;
+    font-weight: 300;
+    font-size: 50px;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-family: "Inter", sans-serif !important;
+    color: #000 !important;
+    font-size: 42px !important;
+    text-align: center;
+  }
+
+  .bg-gray {
+    background-color: #f2f2f2;
+  }
+
+  .py-75 {
+    padding-top: 75px;
+    padding-bottom: 0;
+  }
+
+  .street {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 6px;
+  }
+
+  .untree_co-hero.overlay:before,
+  .bg-img.overlay:before {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .btn {
+    background: transparent !important;
+    border: 2px solid #fff !important;
+    color: #fff;
+    border-radius: 0 !important;
+
+  }
+
+  .btn:hover {
+    background: #fff !important;
+    border: 2px solid #fff !important;
+    color: #000;
+    border-radius: 0 !important;
+
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: calc(100% - 40px);
+      max-width: 2565px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 42px !important;
+    }
+
+    .iframe-map {
+      height: calc(100vh - 200px);
+    }
+
+    h3 {
+      font-size: 28px !important;
+    }
+  }
+
+  /* Add some basic styling to the video header container */
+  .fullscreen-video-container {
+    position: relative;
+    height: 100vh;
+    /* Adjust this value to set the video height */
+    max-height: 1000px;
+    overflow: hidden;
+  }
+
+  /* Set video element to cover the entire container */
+  #headerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 20%;
+  }
+
+  /* Optional: Add styles to the overlay content */
+  .overlay-content {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+
+  /* Semi-transparent overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the alpha value (last parameter) to control the darkness */
+  }
+
+  /* Additional styling for the header text overlay */
+  .header {
+    z-index: 3;
+    /* Ensure the text is above the video */
+    padding: 20px;
+    /* Add any other styles you want for the header text */
+  }
+
+  .full-width-iframe {
+    width: 100%;
+    min-height: 650px;
+    /* Set the height as needed */
+  }
+
+  .nav-link {
+    background-color: #ddd;
+    color: #4d4d4d;
+    font-size: 14px;
+  }
+
+  .nav-tabs {
+    border-bottom: 10px solid #fff;
+  }
+
+  .nav-tabs .nav-link {
+    text-align: center;
+    min-width: 150px;
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+    color: #4d4d4d;
+  }
+
+  .divider {
+    border-bottom: 4px solid #000;
+    width: 75px;
+    margin: 15px auto 50px auto;
+  }
+
+  .nav-link {
+    color: black;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .site-nav .site-navigation .site-menu>li>a {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .text-primary {
+    color: #fff !important;
+  }
+
+
+  .menu-anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+  }
+
+  #sticky-wrapper.is-sticky .sticky-nav {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .site-mobile-menu .site-nav-wrap a {
+    padding: 15px 25px;
+  }
+
+  .site-mobile-menu .site-nav-wrap a:hover {
+    color: #000;
+    font-weight: 600;
+  }
+
+  .site-mobile-menu .site-nav-wrap>li>a {
+    font-size: 18px !important;
+  }
+</style>
+
+
+
+<body>
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- Navigation menu -->
+  <nav class="site-nav mb-5">
+    <div class="sticky-nav js-sticky-header">
+      <div class="container position-relative">
+        <div class="site-navigation text-center align-items-center">
+          <a href="index.html" class="logo menu-absolute m-0">1 Kemp Square<span class="text-primary">.</span></a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#photo-gallery">Gallery</a></li>
+            <li><a href="#neighbourhood-info">Neighbourhood Info</a></li>
+            <li><a href="#neighbourhood-map">Map</a></li>
+          </ul>
+
+          <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="untree_co-hero overlay d-none d-md-block" style="background-image: url('images/63.jpg');">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12">
+          <div class="row justify-content-center ">
+            <div class="col-lg-6 text-center ">
+              <h1 class="h1-hero mb-3 heading text-white" data-aos="fade-up" data-aos-delay="100">For Sale</h1>
+              <div class="mb-5 text-white desc mx-auto" data-aos="fade-up" data-aos-delay="200">
+
+                <h2 class="h2-hero mb-3" data-aos="fade-up" data-aos-delay="100">1 Kemp Square</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="street">JANE & LAWRENCE</p>
+              </div>
+
+              <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#photo-gallery"
+                  class="btn btn-secondary">View
+                  Gallery</a></p>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+  </div>
+
+  <!-- Placeholder image -->
+  <img id="videoPlaceholder" src="images/63.jpg"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+
+  <!-- Video Header Section -->
+  <header class="fullscreen-video-container position-relative d-md-none">
+    <video id="headerVideo" playsinline autoplay muted loop>
+      <source src="images/1-Kemp-Square-video.mp4" type="video/mp4">
+      <!-- Add additional source elements for different video formats, e.g., WebM, Ogg -->
+      Your browser does not support the video tag.
+    </video>
+    <!-- Add semi-transparent overlay -->
+    <div class="overlay"></div>
+    <!-- Optional: Add any additional content over the video, like a navigation bar or headline -->
+    <div class="overlay-content position-absolute d-flex align-items-center justify-content-center">
+      <div class="header text-center text-white">
+        <h1 class="mb-3 heading text-white" data-aos="fade-up" data-aos-delay="100">For Sale</h1>
+        <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">1 Kemp Square</h2>
+        <p data-aos="fade-up" data-aos-delay="100" class="street">JANE & LAWRENCE</p>
+        <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#gallery" class="btn btn-secondary">View
+            Gallery</a></p>
+      </div>
+    </div>
+  </header>
+
+
+  <div id="photo-gallery" class="menu-anchor"></div>
+  <!-- Galler Start -->
+  <div class="untree_co-section bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <h3 id="photo-gallery">Photo Gallery</h3>
+          <div class="divider"></div>
+        </div>
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/63.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/63.jpg">
+          </a>
+          <a href="images/55.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/55.jpg">
+          </a>
+          <a href="images/54.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/54.jpg">
+          </a>
+          <a href="images/51.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/51.jpg">
+          </a>
+
+        </div>
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/57.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/57.jpg">
+          </a>
+          <a href="images/58.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/58.jpg">
+          </a>
+          <a href="images/59.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/59.jpg">
+          </a>
+          <a href="images/37.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/37.jpg">
+          </a>
+
+        </div>
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/63.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/63.jpg">
+          </a>
+          <a href="images/36.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/36.jpg">
+          </a>
+          <a href="images/35.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/35.jpg">
+          </a>
+          <a href="images/34.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/34.jpg">
+          </a>
+
+        </div>
+
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/33.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/33.jpg">
+          </a>
+          <a href="images/32.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/32.jpg">
+          </a>
+          <a href="images/31.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/31.jpg">
+          </a>
+          <a href="images/29.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/29.jpg">
+          </a>
+
+        </div>
+
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/28.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/28.jpg">
+          </a>
+          <a href="images/30.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/30.jpg">
+          </a>
+          <a href="images/25.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/25.jpg">
+          </a>
+          <a href="images/27.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/27.jpg">
+          </a>
+
+        </div>
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/26.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/26.jpg">
+          </a>
+          <a href="images/22.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/22.jpg">
+          </a>
+          <a href="images/23.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/23.jpg">
+          </a>
+          <a href="images/19.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/19.jpg">
+          </a>
+
+        </div>
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/20.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/20.jpg">
+          </a>
+          <a href="images/21.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/21.jpg">
+          </a>
+          <a href="images/42.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/42.jpg">
+          </a>
+          <a href="images/16.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/16.jpg">
+          </a>
+
+        </div>
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/15.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/15.jpg">
+          </a>
+          <a href="images/18.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/18.jpg">
+          </a>
+          <a href="images/13.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/13.jpg">
+          </a>
+          <a href="images/12.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/12.jpg">
+          </a>
+
+        </div>
+
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/11.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/11.jpg">
+          </a>
+          <a href="images/9.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/9.jpg">
+          </a>
+          <a href="images/8.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/8.jpg">
+          </a>
+          <a href="images/7.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/7.jpg">
+          </a>
+          <a href="images/74.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/74.jpg">
+          </a>
+
+        </div>
+        <div class="col-md-6 col-lg-6 item">
+          <a href="images/6.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/6.jpg">
+          </a>
+          <a href="images/2.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="0">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/2.jpg">
+          </a>
+          <a href="images/4.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="100">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/4.jpg">
+          </a>
+          <a href="images/1.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/1.jpg">
+          </a>
+          <a href="images/66.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/66.jpg">
+          </a>
+
+          <a href="images/77.jpg" class="item-wrap fancybox mb-4" data-fancybox="gal" data-aos="fade-up"
+            data-aos-delay="200">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="images/77.jpg">
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Galler End -->
+  <div id="neighbourhood-info" class="menu-anchor"></div>
+  <div class="untree_co-section py-75">
+    <div class="container px-0 mx-0" style="width: 100%;">
+      <div class="row">
+        <div class="col-12">
+          <h3>Neighbourhood Info</h3>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div class="col-12 px-0" style="max-height: 650px;">
+        <iframe class="full-width-iframe"
+          src="https://app.hoodq.com/package/d6616452-82ca-431a-b952-f0af64db4abf/highlights" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="neighbourhood-map" class="menu-anchor"></div>
+  <div class="untree_co-secrtion py-75 bg-gray">
+    <div class="container px-0 mx-0 my-0" style="width: 100%;">
+      <div class="col-12">
+        <h3>Neighbourhood Map</h3>
+      </div>
+      <div class="divider"></div>
+      <ul class="nav nav-tabs justify-content-center" id="myTabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="map-tab" data-toggle="tab" href="#map" role="tab" aria-controls="map"
+            aria-selected="true">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="street-view-tab" data-toggle="tab" href="#street-view" role="tab"
+            aria-controls="street-view" aria-selected="false">Street View</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabsContent">
+        <div class="tab-pane fade show active" id="map" role="tabpanel" aria-labelledby="map-tab">
+          <iframe class="iframe-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.5158651436764!2d-79.4979921872756!3d43.6998274492918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b31385422b041%3A0x727ed70972a66528!2s1%20Kemp%20Square%2C%20North%20York%2C%20ON%20M6M%202V2!5e0!3m2!1sen!2sca!4v1697309944268!5m2!1sen!2sca"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"
+            height="800"></iframe>
+        </div>
+        <div class="tab-pane fade" id="street-view" role="tabpanel" aria-labelledby="street-view-tab">
+          <iframe class="iframe-map"
+            src="https://www.google.com/maps/embed?pb=!4v1697310054774!6m8!1m7!1s14jwUjcLG2AIjedbwwGw0g!2m2!1d43.70010492935909!2d-79.4954184279506!3f184.68089621282422!4f1.3115854867752859!5f1.7514450609369105"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"
+            height="800"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    // Update the href attribute to match the id of the h3 tag
+    $(document).ready(function () {
+      $('a[href^="gallery"]').on('click', function (event) {
+        event.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').animate({
+          'scrollTop': $target.offset().top
+        }, 1000, 'swing');
+      });
+    });
+  </script>
+
+  <script>
+    // JavaScript to hide the placeholder image once the video starts playing
+    document.getElementById('headerVideo').addEventListener('play', function () {
+      document.getElementById('videoPlaceholder').style.display = 'none';
+    });
+  </script>
+
+  <script>
+    $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar");
+        $nav.toggleClass('navbar-scroll', $(this).scrollTop() > $nav.height());
+      });
+    });
+  </script>
+
+</body>
+
+</html>
